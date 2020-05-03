@@ -1,0 +1,7 @@
+ <%= link_to "Wikinimous", root_path %>
+
+<%= form_for(@article, class: 'form') do |f| %>
+  <%= f.text_field :title %>  <br>
+  <%= f.text_area :content, data: { editor: 'markdown' }, rows: 10 %>  <br>
+  <%= f.submit %>
+<% end %>
